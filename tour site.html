@@ -1,0 +1,421 @@
+<html>
+    <head>
+    
+  <title> a-safaris </title>
+  
+  <style>
+ 
+
+body {
+  
+  font-family: sans-serif;
+  color:rgb(235, 232, 232);
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(landscape.jpg);
+       background-size:cover;
+	   background-repeat:no repeat;
+	   background-position:center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 45px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    opacity: 0.8;
+	width:120vw;
+}
+   h1 {
+   text-align:center;
+   text-decoration:none;
+   color: rgb(227, 252, 227);
+   }
+   
+.logo img {
+opacity:0.9;
+padding-top:10px;
+padding-left:`5px;
+padding-right:50px;
+padding-bottom:10px;
+ float:left;
+
+ width:90px;
+ height:auto;
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   
+ 
+ 
+.nav-link{
+  list-style-type:none;
+     margin: 10px; 
+     margin-top:10px; 
+    display: inline-flex; 
+    margin-right: 5px; 
+    float: right;
+     /*justify-content: space-around; */ 
+    text-decoration: none;
+    color: white;
+    padding:6px;
+    padding-right: 10px;
+    padding-left:10px;
+    margin-right: 10px;
+    margin-right:15px;
+    
+    font-size: 16px;
+ border:0px solid whitesmoke;
+
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#punani {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 150px;
+}
+
+#punani h2 {
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+#punani input[type="phone"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+  font-size:15px;
+  text-align:center;
+}
+#punani input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  border: 0;
+  background-color:rgb(245, 201, 8);
+  font-size:20px;
+}
+
+#punani input[type="submit"]:hover {
+  background-color: rgb(243, 123, 10);
+  transition: background-color 1s ease;
+}
+
+h1 {
+margin:30px;
+font-size: 40px;
+}
+
+h2 {
+ padding-bottom: 10px;
+
+}
+#features {
+  margin-top: 20px;
+  font-family:Arial;
+
+ 
+}
+
+
+
+#features .desc {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 110px;
+  width: 80vw;
+  padding: 40px;
+}
+
+
+#phone-video {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#phone-video iframe {
+  max-width: 560px;
+  width: 100%;
+  
+}
+
+h2 {
+  font-size:20px; 
+   text-decoration:none;
+   color: rgb(248, 252, 252);
+   }
+
+   h4{
+     
+     font-size:30px;
+     text-decoration:none;
+     color:rgb(239, 248, 239);
+     text-align:center;
+     padding-top:50px;
+   }
+
+   
+
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  color:white;
+}
+#pricing #iphone, #pricing #sony, #pricing #samsung {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+#pricing #iphone .level, #pricing #sony .level, #pricing #samsung .level {
+  background-color: #ddd;
+  color: black;
+  padding: 10px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#pricing #iphone h2, #pricing #sony h2, #pricing #samsung h2 {
+  margin-top: 1px;
+}
+#pricing #iphone ol, #pricing #sony ol, #pricing #samsung ol {
+  margin: 10px 0;
+}
+#pricing #iphone ol li, #pricing #sony ol li, #pricing #samsung ol li {
+  padding: 5px 0;
+}
+#pricing #iphone button, #pricing #sony button, #pricing #samsung button {
+  border: 0;
+  margin: 10px 0;
+  background-color:rgb(179, 240, 13);;
+  font-weight: 400;
+  height:40px;
+  font-size:1em;
+  padding:0 20px;
+  text-transform:uppercase;
+  border-radius:2px;
+  border:1px black;
+}
+#pricing #iphone button:hover, #pricing #sony button:hover, #pricing #samsung button:hover {
+  background-color: rgb(252, 196, 11);
+  transition: background-color 2s;
+}
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  #pricing #iphone, #pricing #sony, #pricing #samsung {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+  margin-top: 30px;
+  background-color: rgb(173, 141, 141);
+  padding: 20px;
+  
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration:none;
+  color:black;
+  padding-bottom:10px;
+  list-style-type: none;
+}
+footer ul li {
+  padding: 0 10px;
+  margin-bottom:15px;
+  
+}
+
+
+footer ul li a{
+ text-decoration:none;
+ color:black;
+ padding:5px 20px;
+ border:0px solid black;
+ transition:1s ease;
+ }
+ 
+footer ul li a:hover{
+ background-color:gray;
+ color:green;
+ }
+footer span {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+  </style>
+  
+    </head>
+	<body translate="no" >
+
+  <div id="page-wrapper">
+<header id="header">
+  <div class="logo">
+    <img id="header-img" src="alt2.jpg" />
+  </div>
+  <nav id="navbar">
+     
+    <ul>
+      
+  
+     
+      <a class="nav-link" href="#punani"><li>Home</li></a>
+      <a class="nav-link" href="#features"><li>news</li></a>
+      <a class="nav-link" href="#phone-video"><li>video</li></a>
+      
+      <a class="nav-link" href="#pricing"><li>packages</li></a>
+      
+	  
+	 </ul>
+   
+    
+                   
+  </nav>
+
+</header>
+
+
+<div class="container">
+
+</div>
+
+<section id="punani">
+  <h2>Andela Safaris</h2>
+  <form id="form" action="">
+    <input name="phone" id="phone" type="phone" placeholder="Enter game park name" required/>
+    <input id="submit" type="submit" value="search" class="btn"></input>
+  </form>
+</section>
+
+
+<div class="container">
+  <section id="features">
+    <div class="grid">
+	 <h1>TOP DESTINATONS</h3>
+      <div class="desc">
+        <h2>BWINDI IMPENETRABLE PARK</h2>
+        <p>Bwindi impenetrable is located in kanungu town west of uganda. it is a suitable tourist destination for vacations and tours. activities include bird watching, gorilla tracking, mountain hiking among others. Animals found there may include gorilla which are the prime view. others include birds like the parrots, finchs , among thousands of species. the town has over 10 tour lodges and hotels with 5 star accomodation and other tourist activities can be found for example garuga golf course. transport is in all forms that is air transport from kihihi airstrip, and the roads are okay. <p>
+      </div>
+    </div>
+	
+	<div class="grid">
+      <div class="desc">
+        <h2>QUEEN ELIZABETH NATIONAL PARK</h2>
+        <p>Queen Elizabeth NP is the oldest and most historical in the country. it is located in kasese town west of uganda. it is a suitable tourist destination for vacations and tours, game and hunting, photograghy and many others . activities include bird watching, photgraphy,animal tracking, boat  cruise on the kazinga channel among others. Animals found there may include lions, hyenas, elephants, zebras, antelopes, bongos,crocodiles. others include birds like the parrots, finchs , among thousands of species. the town has over 40 tour lodges and hotels with 5 star accomodation and other tourist activities. transport is in all forms that is air and road .  </p>
+      </div>
+    </div>
+    
+	<div class="grid">
+      <div class="desc">
+        <h2>MURCHISON FALLS </h2>
+		 <p>Murchison Falls is also among the oldest and most historical in the country.it is also the largest with over 72000 square kilometres. it is located in masindi and mubende town mid north west of uganda. it is a suitable tourist destination for vacations and tours, game and hunting, photograghy , scuba diving and many others . activities include bird watching, photgraphy,animal tracking, boat  cruise on the nile , scuba diving  among others. Animals found there may include lions, hyenas, elephants, zebras, antelopes, bongos,crocodiles. others include birds like the parrots, finchs , among thousands of species. the town has over 15 tour lodges and hotels with 5 star accomodation and other tourist activities. transport is in all forms that is air and road .</p>
+        
+      </div>
+    </div>
+	</section>
+	  <section id="phone-video">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/UcKgDepi338" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </section>
+
+  <h4>PICK YOUR PACK</h4>
+	<section id="pricing">
+    <div id="iphone">
+      <div class="level">
+      economic pack
+      </div>
+      <h2>ugx 1,200,000</h2>
+	  <h3>Inclusive</h3>
+      <ol>      
+        <li>5 day accomodation</li>
+        <li>breakfast and lunch</li>
+        <li>free tour guide </li>
+		<li>tour in desired location</li>
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+    <div id="sony">
+      <div class="level">
+      2-FOR 1
+      </div>
+      <h2>ugx 1,600,000</h2>
+	   <h3>Inclusive</h3>
+      <ol>
+        <li>room for two</li>
+        <li>breakfast and lunch</li>
+        <li>free tour guide</li>
+        <li>tour for two in desired location</li>
+        
+      </ol>
+      </ul>
+      <button class="btn">Select</button>
+    </div>
+    <div id="samsung">
+      <div class="level">
+        Business class pack
+      </div>
+      <h2>Ugx 3,500,000</h2>
+	   <h3>Inclusive</h3>
+      <ol>
+        <li>5star accomodation</li>
+        <li>free escort </li>
+        <li>tour guide </li>
+        <li>breakfast, lunch, desert,of your choice</li>
+        <li>tour across all gameparks</li>
+        
+      </ol>
+      <button class="btn">Select</button>
+    </div>
+  </section>
+  <footer>
+    <ul>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Contact us</a></li>
+    </ul>	
+    <span>Copyright 2019, Original Phone Sell</span>
+  </footer>
+</div>
+</div>
+
+
+
+</body>
+</html>
